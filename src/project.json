@@ -1,0 +1,34 @@
+{
+  "version": "1.0.0-*",
+  "description": "Conversio integration for Core Clr",
+  "authors": [
+    "mwilson"
+  ],
+  "dependencies": {
+    "Newtonsoft.Json": "9.0.1",
+    "System.Net.Http": "4.1.0"
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "dependencies": {
+          "System.Collections": "4.0.11",
+          "System.Runtime": "4.1.0"
+      },
+      "imports": [
+        "dotnet5.6",
+        "dnxcore50",
+        "portable-net45+win8"
+      ]
+    },
+    "net451": {},
+    "netstandard1.3": {
+      "imports": [
+        "dotnet5.4",
+        "portable-net451+win8"
+      ],
+      "dependencies": {
+        "System.Linq": "4.1.0"
+      }
+    }
+  }
+}
